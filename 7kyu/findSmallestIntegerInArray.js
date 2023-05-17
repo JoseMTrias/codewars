@@ -16,3 +16,11 @@ class SmallestIntegerFinder {
     return args.reduce((a, b) => Math.min(a, b));
   }
 }
+
+// ALTERNATIVE:
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}

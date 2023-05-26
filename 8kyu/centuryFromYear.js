@@ -25,3 +25,12 @@ function century(year) {
   return res;
 }
 
+// ALTERNATIVE BETTER SOLUTION:
+
+// function century(year) {
+//     return Math.ceil(year/100); //using ceiling method to round up to nearest century (100)
+//   }
+
+// OR ARROW FUNCTION
+
+// const century = year => Math.ceil(year/100)

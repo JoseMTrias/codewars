@@ -11,3 +11,12 @@
 
 // SOLUTION:
 
+function accum(s) {
+  let res = s.split('').map((c, i) => {
+    if (i === 0) {
+      return c.toUpperCase();
+    }
+    return c.toUpperCase() + c.repeat(i).toLowerCase();
+  });
+  return res.join('-');
+}

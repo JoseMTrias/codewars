@@ -19,3 +19,7 @@ function solution(str) {
   }
   return result;
 }
+
+// GOD LEVEL SOLUTION:
+
+const solution = (s) => (s + '_').match(/.{2}/g) || [];

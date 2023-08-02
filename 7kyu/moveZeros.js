@@ -16,3 +16,16 @@
 // Tips: Order of other numbers should not change.
 
 // SOLUTION:
+
+function move_zeros(arrNum, isRight) {
+  if (isRight === null || isRight === undefined || typeof isRight !== 'boolean')
+    isRight = true;
+
+  let nonZero = [];
+  let zero = [];
+  for (let i = 0; i < arrNum.length; i++) {
+    if (arrNum[i] === 0) zero.push(arrNum[i]);
+    else nonZero.push(arrNum[i]);
+  }
+  return isRight === true ? nonZero.concat(zero) : zero.concat(nonZero);
+}

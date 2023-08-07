@@ -12,3 +12,12 @@
 
 // SOLUTION:
 
+function findOutlier(integers) {
+  let arrayEven = [];
+  let arrayOdd = [];
+  for (i = 0; i < integers.length; i++) {
+    if (integers[i] % 2 === 0) arrayEven.push(integers[i]);
+    if (Math.abs(integers[i] % 2) === 1) arrayOdd.push(integers[i]);
+  }
+  return arrayEven.length > arrayOdd.length ? arrayOdd[0] : arrayEven[0];
+}

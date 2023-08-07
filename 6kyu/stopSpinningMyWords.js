@@ -5,9 +5,18 @@
 
 // Examples:
 
-// spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" 
-// spinWords( "This is a test") => returns "This is a test" 
+// spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw"
+// spinWords( "This is a test") => returns "This is a test"
 // spinWords( "This is another test" )=> returns "This is rehtona test"
 
 // SOLUTION:
 
+function spinWords(string) {
+  let words = string.split(' ');
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length >= 5) {
+      words[i] = words[i].split('').reverse().join('');
+    }
+  }
+  return words.join(' ');
+}

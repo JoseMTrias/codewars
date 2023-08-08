@@ -19,9 +19,9 @@ function alphabetPosition(text) {
   let onlyLetters = text
     .toLowerCase()
     .split('')
-    .filter((char) => /[a-zA-Z]/.test(char));
+    .filter((char) => /[a-z]/.test(char));
   for (let i = 0; i < onlyLetters.length; i++) {
     onlyLetters[i] = onlyLetters[i].charCodeAt(0) - 96;
   }
-  return String(onlyLetters.join(' '));
+  return onlyLetters.join(' ');
 }

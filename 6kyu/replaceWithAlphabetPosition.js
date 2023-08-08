@@ -17,11 +17,11 @@
 
 function alphabetPosition(text) {
   let onlyLetters = text
+    .replace(/[^a-z]/gi, '')
     .toLowerCase()
-    .split('')
-    .filter((char) => /[a-z]/.test(char));
+    .split('');
   for (let i = 0; i < onlyLetters.length; i++) {
-    onlyLetters[i] = onlyLetters[i].charCodeAt(0) - 96;
+    onlyLetters[i] = onlyLetters[i].charCodeAt() - 96;
   }
   return onlyLetters.join(' ');
 }

@@ -25,3 +25,11 @@ function isValidWalk(walk) {
   if (n !== s || w !== e) return false;
   return true;
 }
+
+// BETTER SOLUTION:
+
+function isValidWalk(walk) {
+  let coor = { n: 0, s: 0, e: 0, w: 0 };
+  walk.forEach((c) => coor[c]++);
+  return coor.n === coor.s && coor.e === coor.w && walk.length === 10;
+}

@@ -7,3 +7,12 @@
 
 // SOLUTION:
 
+function moveZeros(arr) {
+  let zeros = [];
+  let restArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) zeros.push(arr[i]);
+    else restArr.push(arr[i]);
+  }
+  return restArr.concat(zeros);
+}

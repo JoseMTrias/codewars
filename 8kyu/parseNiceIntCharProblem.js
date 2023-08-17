@@ -12,3 +12,9 @@
 function getAge(inputString) {
   return Number(inputString.split('')[0]);
 }
+
+// ALTERNATIVE SOLUTION
+
+function getAge(inputString) {
+  return parseInt(inputString);
+}

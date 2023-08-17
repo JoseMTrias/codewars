@@ -10,3 +10,11 @@
 
 // SOLUTION:
 
+function doubleChar(str) {
+  let splitted = str.split('');
+  console.log(splitted);
+  for (let i = 0; i < splitted.length; i++) {
+    splitted[i] = splitted[i] + splitted[i];
+  }
+  return splitted.join('');
+}

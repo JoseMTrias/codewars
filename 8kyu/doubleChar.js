@@ -18,3 +18,9 @@ function doubleChar(str) {
   }
   return splitted.join('');
 }
+
+// ALTERNATIVE SOLUTION:
+
+function doubleChar(str) {
+  return [...str].map((x) => x + x).join('');
+}

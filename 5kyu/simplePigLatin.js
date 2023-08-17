@@ -9,3 +9,12 @@
 
 // SOLUTION:
 
+function pigIt(str) {
+  let splitted = str.split(' ');
+  for (let i = 0; i < splitted.length; i++) {
+    if (/^[a-zA-Z]+$/.test(splitted[i])) {
+      splitted[i] = splitted[i].slice(1) + splitted[i][0] + 'ay';
+    }
+  }
+  return splitted.join(' ');
+}

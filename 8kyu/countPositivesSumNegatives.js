@@ -13,12 +13,9 @@
 // SOLUTION:
 
 function countPositivesSumNegatives(input) {
+  if (input === null || input.length === 0) return [];
   let pos = 0;
   let neg = 0;
-  if (input === null || input.length === 0) {
-    return [];
-  } else {
-    input.forEach((num) => (num > 0 ? pos++ : (neg += num)));
-  }
+  input.forEach((num) => (num > 0 ? pos++ : (neg += num)));
   return [pos, neg];
 }

@@ -18,3 +18,10 @@
 // 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
 
 // SOLUTION:
+
+function SeriesSum(n) {
+  if (0 === n) return '0.00';
+  let s = 1;
+  for (let i = 1; i < n; i++) s += 1 / (1 + 3 * i);
+  return String(s.toFixed(2));
+}

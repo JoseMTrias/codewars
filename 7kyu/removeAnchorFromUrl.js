@@ -21,3 +21,9 @@ function removeUrlAnchor(url) {
   }
   return res.join('');
 }
+
+// BEST SOLUTION:
+
+function removeUrlAnchor(url) {
+  return url.split('#')[0];
+}

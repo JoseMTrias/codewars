@@ -9,3 +9,15 @@
 
 // SOLUTION:
 
+function removeUrlAnchor(url) {
+  let res = [];
+  let splitted = url.split('');
+  for (let i = 0; i < splitted.length; i++) {
+    if (splitted[i] !== '#') {
+      res.push(splitted[i]);
+    } else if (splitted[i] === '#') {
+      break;
+    }
+  }
+  return res.join('');
+}

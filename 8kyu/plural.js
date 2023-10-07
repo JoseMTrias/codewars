@@ -8,3 +8,7 @@
 // All values will be positive integers or floats, or zero.
 
 // SOLUTION:
+
+function plural(n) {
+  return n === 1 ? false : true;
+}

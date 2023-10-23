@@ -10,12 +10,12 @@
 // SOLUTION:
 
 function capitals(word) {
-    let result = []
-    let splitted = word.split("")
-    for (let i = 0; i < splitted.length; i++){
-      if (splitted[i] === splitted[i].toUpperCase()) {
-        result.push(splitted.indexOf(splitted[i]))
-      }
+  let result = [];
+  let splitted = word.split('');
+  for (let i = 0; i < splitted.length; i++) {
+    if (splitted[i] === splitted[i].toUpperCase()) {
+      result.push(splitted.indexOf(splitted[i]));
     }
-    return result
   }
+  return result;
+}

@@ -18,8 +18,17 @@
 
 // SOLUTION: (not final)
 
+// function removeSmallest(numbers) {
+//   let smallest = numbers.indexOf(Math.min(...numbers));
+//   numbers.splice(smallest, 1);
+//   return numbers;
+// }
+
+// SOLUTION: (final)
+
 function removeSmallest(numbers) {
-  let smallest = numbers.indexOf(Math.min(...numbers));
-  numbers.splice(smallest, 1);
-  return numbers;
+  let min = Math.min.apply(null, numbers);
+  let newArrayNumbers = numbers.slice(0);
+  newArrayNumbers.splice(newArrayNumbers.indexOf(min), 1);
+  return newArrayNumbers;
 }

@@ -16,4 +16,10 @@
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
-// SOLUTION:
+// SOLUTION: (not final)
+
+function removeSmallest(numbers) {
+  let smallest = numbers.indexOf(Math.min(...numbers));
+  numbers.splice(smallest, 1);
+  return numbers;
+}

@@ -9,3 +9,7 @@ function combat(health, damage) {
   let x = health - damage;
   return x < 0 ? 0 : x;
 }
+
+// SOLUTION PRO:
+
+const combat = (health, damage) => (health < damage ? 0 : health - damage);

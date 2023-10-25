@@ -23,3 +23,10 @@ function getGrade(s1, s2, s3) {
   if (score < 90) return 'B';
   if (score <= 100) return 'A';
 }
+
+// SOLUTION PRO:
+
+function getGrade(s1, s2, s3) {
+  let s = (s1 + s2 + s3) / 3;
+  return s >= 90 ? 'A' : s >= 80 ? 'B' : s >= 70 ? 'C' : s >= 60 ? 'D' : 'F';
+}

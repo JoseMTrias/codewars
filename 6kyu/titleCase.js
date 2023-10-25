@@ -17,3 +17,21 @@
 // titleCase('the quick brown fox') // should return: 'The Quick Brown Fox'
 
 // SOLUTION:
+
+function titleCase(title, minorWords) {
+  if (title.length === 0) return '';
+  let minorArray;
+  if (minorWords) {
+    minorArray = minorWords.toLowerCase().split(' ');
+  } else {
+    minorArray = [];
+  }
+  let titleArray = title.toLowerCase().split(' ');
+  titleArray[0] = capitalize(titleArray[0]);
+  for (let i = 1; i < titleArray.length; i++) {
+    if (!minorArray.includes(titleArray[i]))
+      titleArray[i] = capitalize(titleArray[i]);
+  }
+  return titleArray.join(' ');
+}
+const capitalize = (str) => str[0].toUpperCase() + str.slice(1);

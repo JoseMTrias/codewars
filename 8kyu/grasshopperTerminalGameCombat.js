@@ -5,3 +5,7 @@
 
 // SOLUTION:
 
+function combat(health, damage) {
+  let x = health - damage;
+  return x < 0 ? 0 : x;
+}

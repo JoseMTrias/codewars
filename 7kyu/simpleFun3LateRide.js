@@ -31,3 +31,18 @@
 // The sum of the digits the digital timer would show.
 
 // SOLUTION:
+
+function lateRide(n) {
+  if (n === 0) return 0;
+  let time = [];
+  let result = 0;
+  time[0] = Math.floor(n / 60);
+  time[1] = n % 60;
+  let numbers = Number(time.join(''));
+  let arrOfStr = Array.from(String(numbers));
+  let arrOfNum = arrOfStr.map((str) => Number(str));
+  for (let i = 0; i < arrOfNum.length; i++) {
+    result += arrOfNum[i];
+  }
+  return result;
+}

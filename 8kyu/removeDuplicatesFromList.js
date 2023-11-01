@@ -12,3 +12,9 @@
 // [1, 2, 1, 1, 3, 2] -> [1, 2, 3]
 
 // SOLUTION:
+
+function distinct(a) {
+  let findDuplicates = (arr) =>
+    arr.filter((item, index) => arr.indexOf(item) === index);
+  return findDuplicates(a);
+}

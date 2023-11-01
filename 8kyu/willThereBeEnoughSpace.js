@@ -17,3 +17,8 @@
 // cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
 
 // SOLUTION:
+
+function enough(cap, on, wait) {
+  let calc = cap - on - wait;
+  return calc < 0 ? Math.abs(calc) : 0;
+}

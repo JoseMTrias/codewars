@@ -18,3 +18,9 @@ function distinct(a) {
     arr.filter((item, index) => arr.indexOf(item) === index);
   return findDuplicates(a);
 }
+
+// BEST SOLUTION:
+
+function distinct(a) {
+  return [...new Set(a)];
+}

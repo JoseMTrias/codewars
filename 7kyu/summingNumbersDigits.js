@@ -11,3 +11,12 @@
 // Let's assume that all numbers in the input will be integer values.
 
 // SOLUTION:
+
+function sumDigits(n) {
+  let arr = String(n).split('').map(Number);
+  let onlyNumbers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= 0 && arr[i] <= 9) onlyNumbers.push(arr[i]);
+  }
+  return onlyNumbers.reduce((a, b) => a + b);
+}

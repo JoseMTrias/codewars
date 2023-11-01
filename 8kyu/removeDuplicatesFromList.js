@@ -13,6 +13,18 @@
 
 // SOLUTION:
 
+function distinct(arr) {
+  let res = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!res.includes(arr[i])) {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+
+// ALTERNATIVE
+
 function distinct(a) {
   let findDuplicates = (arr) =>
     arr.filter((item, index) => arr.indexOf(item) === index);

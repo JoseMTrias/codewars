@@ -6,3 +6,13 @@
 // Write a function to calculate factorial for a given input. If input is below 0 or above 12 throw an exception of type ArgumentOutOfRangeException (C#) or IllegalArgumentException (Java) or RangeException (PHP) or throw a RangeError (JavaScript) or ValueError (Python) or return -1 (C).
 
 // SOLUTION:
+
+function factorial(n) {
+    let result = 1
+    if ((n > 12 || n < 0)) throw new RangeError("n must be between 0 and 12")
+    if (n === 0) return result
+    for (let i = n; i >= 1; i--) {
+      result = result * i
+    }
+    return result
+  }

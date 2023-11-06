@@ -10,7 +10,7 @@
 // Implement the function taking n and d as parameters and returning this count.
 
 // Examples:
-// n = 10, d = 1 
+// n = 10, d = 1
 // the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
 // We are using the digit 1 in: 1, 16, 81, 100. The total count is then 4.
 
@@ -21,4 +21,10 @@
 
 // SOLUTION:
 
-
+function nbDig(n, d) {
+  let res = '';
+  for (let i = 0; i <= n; i++) {
+    res += i ** 2;
+  }
+  return res.split(d).length - 1;
+}

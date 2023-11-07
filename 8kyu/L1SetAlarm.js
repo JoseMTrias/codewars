@@ -16,3 +16,9 @@
 function setAlarm(employed, vacation) {
   return !employed ? false : vacation ? false : true;
 }
+
+// BETTER SOLUTION:
+
+function setAlarm(employed, vacation) {
+  return employed && !vacation;
+}

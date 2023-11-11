@@ -12,3 +12,12 @@
 // (13) is the minimum number could be formed from {1, 3, 1} , Without duplications
 
 // SOLUTION:
+
+function minValue(values) {
+  let res = [];
+  let sorted = values.sort((a, b) => a - b);
+  for (let i = 0; i < sorted.length; i++) {
+    if (!res.includes(sorted[i])) res.push(sorted[i]);
+  }
+  return Number(res.join(''));
+}

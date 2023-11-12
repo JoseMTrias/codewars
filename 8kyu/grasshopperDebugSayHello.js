@@ -9,3 +9,7 @@
 // Hello, Mr. Spock
 
 // SOLUTION:
+
+function sayHello(name) {
+  return 'Hello, ' + name;
+}

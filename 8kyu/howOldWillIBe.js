@@ -12,3 +12,15 @@
 // Good Luck!
 
 // SOLUTION:
+
+function calculateAge(birth, wish) {
+  if (birth === wish) {
+    return 'You were born this very year!';
+  } else if (wish > birth) {
+    if (wish - birth === 1) return 'You are 1 year old.';
+    return `You are ${wish - birth} years old.`;
+  } else if (birth > wish) {
+    if (birth - wish === 1) return 'You will be born in 1 year.';
+    return `You will be born in ${birth - wish} years.`;
+  }
+}

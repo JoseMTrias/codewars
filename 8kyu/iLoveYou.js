@@ -16,3 +16,15 @@
 // Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
 
 // SOLUTION:
+
+function howMuchILoveYou(nbPetals) {
+  let answers = [
+    'not at all',
+    'I love you',
+    'a little',
+    'a lot',
+    'passionately',
+    'madly',
+  ];
+  return answers[nbPetals % 6];
+}

@@ -15,3 +15,12 @@
 // If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
 
 // SOLUTION:
+
+function sumArray(array) {
+  return array
+    ? array
+        .sort((a, b) => a - b)
+        .slice(1, -1)
+        .reduce((a, b) => a + b, 0)
+    : 0;
+}

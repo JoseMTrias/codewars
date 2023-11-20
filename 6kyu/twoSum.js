@@ -12,3 +12,11 @@
 // twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
 
 // SOLUTION:
+
+function twoSum(numbers, target) {
+  for (let i = 1; i < numbers.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (numbers[i] + numbers[j] === target) return [i, j];
+    }
+  }
+}

@@ -7,3 +7,10 @@
 // Return your answer as a number.
 
 // SOLUTION:
+
+function sumMix(x) {
+  for (let i = 0; i < x.length; i++) {
+    x[i] = Number(x[i]);
+  }
+  return x.reduce((a, b) => a + b, 0);
+}

@@ -12,3 +12,9 @@
 function nameShuffler(str) {
   return str.split(' ')[1] + ' ' + str.split(' ')[0];
 }
+
+// ALTERNATIVE SOLUTION:
+
+function nameShuffler(str) {
+  return str.split(' ').reverse().join(' ');
+}

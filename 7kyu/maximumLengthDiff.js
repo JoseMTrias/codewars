@@ -16,3 +16,29 @@
 // output: number as a string
 
 // SOLUTION:
+
+function mxdiflg(a1, a2) {
+  if (a1.length === 0 || a2.length === 0) return -1;
+
+  let a1Length = [];
+  let a2Length = [];
+
+  for (let i = 0; i < a1.length; i++) {
+    a1Length.push(a1[i].length);
+  }
+  a1Length = a1Length.sort((a, b) => a - b);
+
+  for (let i = 0; i < a2.length; i++) {
+    a2Length.push(a2[i].length);
+  }
+  a2Length = a2Length.sort((a, b) => a - b);
+
+  let a1Min = Math.min(...a1Length);
+  let a2Min = Math.min(...a2Length);
+  let a1Max = Math.max(...a1Length);
+  let a2Max = Math.max(...a2Length);
+  let firstOption = a1Max - a2Min;
+  let secondOption = a2Max - a1Min;
+
+  return firstOption > secondOption ? firstOption : secondOption;
+}

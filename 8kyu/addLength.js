@@ -20,3 +20,9 @@ function addLength(str) {
   }
   return str;
 }
+
+// SOLUTION PRO:
+
+function addLength(str) {
+  return str.split(' ').map((x) => `${x} ${x.length}`);
+}

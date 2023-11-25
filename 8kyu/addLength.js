@@ -12,3 +12,11 @@
 // Note: String will have at least one element; words will always be separated by a space.
 
 // SOLUTION:
+
+function addLength(str) {
+  str = str.split(' ');
+  for (let i = 0; i < str.length; i++) {
+    str[i] = str[i] + ' ' + str[i].length;
+  }
+  return str;
+}

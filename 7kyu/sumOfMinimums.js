@@ -16,3 +16,11 @@
 // ENJOY CODING :)
 
 // SOLUTION:
+
+function sumOfMinimums(arr) {
+  let res = [];
+  for (let i = 0; i < arr.length; i++) {
+    res.push(Math.min(...arr[i]));
+  }
+  return res.reduce((a, b) => a + b);
+}

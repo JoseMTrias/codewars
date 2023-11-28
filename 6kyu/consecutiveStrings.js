@@ -15,10 +15,26 @@
 // abcdefuvwxyz ("      12)  concatenation of strarr[4] and strarr[5]
 
 // Two strings are the longest: "folingtrashy" and "abcdefuvwxyz".
-// The first that came is "folingtrashy" so 
+// The first that came is "folingtrashy" so
 // longest_consec(strarr, 2) should return "folingtrashy".
 
 // In the same way:
 // longest_consec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2) --> "abigailtheta"
 
 // SOLUTION:
+
+function longestConsec(strarr, k) {
+  if (strarr.length === 0 || k > strarr.length || k <= 0) return '';
+
+  let pairStr = '';
+  let longestStr = '';
+
+  for (let i = 0; i < strarr.length; i++) {
+    pairStr = strarr.slice(i, i + k);
+    if (pairStr.join('').length > longestStr.length) {
+      longestStr = pairStr.join('');
+    }
+  }
+
+  return longestStr;
+}

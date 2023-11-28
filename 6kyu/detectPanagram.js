@@ -6,3 +6,13 @@
 // Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
 
 // SOLUTION:
+
+function isPangram(string) {
+  let str = string
+    .split(' ')
+    .join('')
+    .replace(/[\W\d]/g, '')
+    .toLowerCase()
+    .split('');
+  return [...new Set(str)].length === 26;
+}

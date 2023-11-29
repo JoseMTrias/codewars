@@ -8,3 +8,8 @@
 // Ouput :: "Position of alphabet: 1"
 
 // SOLUTION:
+
+function position(letter) {
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`;
+}

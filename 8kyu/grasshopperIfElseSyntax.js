@@ -9,3 +9,7 @@
 // The function receives one parameter health which will always be a whole number between -10 and 10.
 
 // SOLUTION:
+
+function checkAlive(health) {
+  return health > 0;
+}

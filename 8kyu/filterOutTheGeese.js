@@ -16,3 +16,19 @@
 
 // SOLUTION:
 
+function gooseFilter(birds) {
+  const geese = [
+    'African',
+    'Roman Tufted',
+    'Toulouse',
+    'Pilgrim',
+    'Steinbacher',
+  ];
+  let res = [];
+  for (let i = 0; i < birds.length; i++) {
+    if (!geese.includes(birds[i])) {
+      res.push(birds[i]);
+    }
+  }
+  return res;
+}

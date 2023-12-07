@@ -11,3 +11,7 @@
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
 
 // SOLUTION:
+
+const areaOrPerimeter = function (l, w) {
+  return l === w ? l * w : 2 * (l + w);
+};

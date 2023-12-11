@@ -13,3 +13,15 @@
 // "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 
 // SOLUTION:
+
+String.prototype.toAlternatingCase = function (str) {
+  let splitted = this.split('');
+  for (let i = 0; i < splitted.length; i++) {
+    if (splitted[i] === splitted[i].toUpperCase()) {
+      splitted[i] = splitted[i].toLowerCase();
+    } else if (splitted[i] === splitted[i].toLowerCase()) {
+      splitted[i] = splitted[i].toUpperCase();
+    }
+  }
+  return splitted.join('');
+};

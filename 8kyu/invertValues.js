@@ -16,3 +16,9 @@ function invert(array) {
   }
   return array;
 }
+
+// BETTER SOLUTION:
+
+function invert(array) {
+  return array.map((n) => -n);
+}

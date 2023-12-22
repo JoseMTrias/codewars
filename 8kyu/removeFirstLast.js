@@ -19,3 +19,11 @@ Examples
 ""     =>  NULL
 "1"    =>  NULL
 "1,2"  =>  NULL
+
+// SOLUTION:
+
+function array(string) {
+  let splitted = string.split(",")
+  let removed = splitted.slice(1, -1)
+  return removed.length === 0 ? null : removed.join(" ")
+}

@@ -10,3 +10,8 @@
 // Input sequence contains minimum two elements and every element is an integer.
 
 // SOLUTION:
+
+function largestPairSum(num) {
+  let order = num.sort((a, b) => b - a);
+  return order[0] + order[1];
+}

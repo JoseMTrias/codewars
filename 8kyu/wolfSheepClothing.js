@@ -19,3 +19,15 @@
 // Output: "Pls go away and stop eating my sheep"
 
 // SOLUTION:
+
+function warnTheSheep(queue) {
+  for (let n = 0; n < queue.length; n++) {
+    if (queue[queue.length - 1] === 'wolf') {
+      return 'Pls go away and stop eating my sheep';
+    } else {
+      return `Oi! Sheep number ${queue
+        .reverse()
+        .indexOf('wolf')}! You are about to be eaten by a wolf!`;
+    }
+  }
+}

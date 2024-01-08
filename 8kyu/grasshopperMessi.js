@@ -16,3 +16,7 @@
 // 5, 10, 2  -->  17
 
 // SOLUTION:
+
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}

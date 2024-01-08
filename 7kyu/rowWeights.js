@@ -25,3 +25,16 @@
 // The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 
 // SOLUTION:
+
+function rowWeights(array) {
+  let team1 = 0;
+  let team2 = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (i % 2 === 0) {
+      team1 += array[i];
+    } else {
+      team2 += array[i];
+    }
+  }
+  return [team1, team2];
+}

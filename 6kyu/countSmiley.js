@@ -21,3 +21,28 @@
 // In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
 
 // SOLUTION:
+
+function countSmileys(arr) {
+  if (arr.length === 0) return 0;
+  let smileys = [
+    ':)',
+    ':D',
+    ':-)',
+    ':-D',
+    ':~)',
+    ':~D',
+    ';)',
+    ';D',
+    ';-)',
+    ';-D',
+    ';~)',
+    ';~D',
+  ];
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (smileys.includes(arr[i])) {
+      count++;
+    }
+  }
+  return count;
+}

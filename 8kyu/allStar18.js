@@ -16,3 +16,14 @@
 // In languages with no distinct character data type, the second argument will be a string of length 1
 
 // SOLUTION:
+
+function strCount(str, letter) {
+  let count = 0;
+  let arr = str.split('');
+  for (let i = 0; i < arr.length; i++) {
+    if (letter === arr[i]) {
+      count++;
+    }
+  }
+  return count;
+}

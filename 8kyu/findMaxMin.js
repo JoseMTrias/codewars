@@ -12,3 +12,10 @@
 // You may consider that there will not be any empty arrays/vectors.
 
 // SOLUTION:
+
+const min = function (list) {
+  return list.sort((a, b) => a - b)[0];
+};
+const max = function (list) {
+  return list.sort((a, b) => b - a)[0];
+};

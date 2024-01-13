@@ -10,3 +10,13 @@
 // ([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
 
 // SOLUTION:
+
+function evenNumbers(array, number) {
+  let res = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      res.push(array[i]);
+    }
+  }
+  return res.slice(-number);
+}

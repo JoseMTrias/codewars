@@ -6,3 +6,12 @@
 // Unfortunately for you, your drive is very bumpy! Given a string showing either flat road (_) or bumps (n). If you are able to reach home safely by encountering 15 bumps or less, return Woohoo!, otherwise return Car Dead
 
 // SOLUTION:
+
+function bump(x) {
+  let count = 0;
+  arr = x.split('');
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 'n') count++;
+  }
+  return count > 15 ? 'Car Dead' : 'Woohoo!';
+}

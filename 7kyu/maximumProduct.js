@@ -13,3 +13,11 @@
 // adjacentElementsProduct([1, 2, 3]); ==> return 6
 
 // SOLUTION:
+
+function adjacentElementsProduct(array) {
+  let res = [];
+  for (let i = 0; i < array.length; i++) {
+    res.push(array[i] * array[i + 1]);
+  }
+  return res.sort((a, b) => b - a)[0];
+}

@@ -18,3 +18,13 @@
 // '0' and '?' returns -1
 
 // SOLUTION:
+
+function sameCase(a, b) {
+  let lowAlph = 'abcdefghijklmnopqrstuvwxyz';
+  let upAlph = lowAlph.toUpperCase();
+  if (lowAlph.includes(a) && lowAlph.includes(b)) return 1;
+  if (upAlph.includes(a) && upAlph.includes(b)) return 1;
+  if (lowAlph.includes(a) && upAlph.includes(b)) return 0;
+  if (lowAlph.includes(b) && upAlph.includes(a)) return 0;
+  else return -1;
+}

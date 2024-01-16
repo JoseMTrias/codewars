@@ -27,3 +27,21 @@
 // 0=0
 
 // SOLUTION:
+
+var SequenceSum = (function () {
+  function SequenceSum() {}
+
+  SequenceSum.showSequence = function (count) {
+    if (count < 0) return `${count}<0`;
+    if (count === 0) return '0=0';
+    let arr = [];
+    for (let i = 0; i <= count; i++) {
+      arr.push(i);
+    }
+    let sum = arr.reduce((a, b) => a + b);
+    let x = arr.join('+');
+    return `${x} = ${sum}`;
+  };
+
+  return SequenceSum;
+})();

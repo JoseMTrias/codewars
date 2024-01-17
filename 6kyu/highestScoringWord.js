@@ -14,3 +14,21 @@
 // All letters will be lowercase and all inputs will be valid.
 
 // SOLUTION:
+
+function high(x) {
+  let words = x.split(' ');
+  let highestScore = 0;
+  let highestScoreWord = '';
+  for (let i = words.length - 1; i >= 0; i--) {
+    let word = words[i];
+    let wordScoreCounter = 0;
+    word.split('').forEach((letter) => {
+      wordScoreCounter += letter.charCodeAt(0) - 96;
+    });
+    if (wordScoreCounter >= highestScore) {
+      highestScore = wordScoreCounter;
+      highestScoreWord = word;
+    }
+  }
+  return highestScoreWord;
+}

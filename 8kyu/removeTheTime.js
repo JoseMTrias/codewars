@@ -21,3 +21,9 @@ function shortenToDate(longDate) {
   let joined = splitted.slice(0, -1).join(' ');
   return joined.split('').slice(0, -1).join('');
 }
+
+// SOLUTION PRO:
+
+function shortenToDate(longDate) {
+  return longDate.split(',')[0];
+}

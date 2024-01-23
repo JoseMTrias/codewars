@@ -9,9 +9,15 @@
 // Write a function that takes the website date/time in its original string format and returns the shortened format.
 
 // Input
-// Input will always be a string, e.g., "Friday May 2, 7pm". 
+// Input will always be a string, e.g., "Friday May 2, 7pm".
 
 // Output
 // Output will be the shortened string, e.g., "Friday May 2".
 
 // SOLUTION:
+
+function shortenToDate(longDate) {
+  let splitted = longDate.split(' ');
+  let joined = splitted.slice(0, -1).join(' ');
+  return joined.split('').slice(0, -1).join('');
+}

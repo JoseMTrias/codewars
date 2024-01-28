@@ -12,3 +12,7 @@
 // 'James Stevens'
 
 // SOLUTION:
+
+function combineNames(first, last) {
+  return `${first} ${last}`;
+}

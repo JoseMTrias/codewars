@@ -13,7 +13,7 @@
 
 // Example:
 //   declare_winner(Fighter("Lew", 10, 2), Fighter("Harry", 5, 4), "Lew") => "Lew"
-  
+
 //   Lew attacks Harry; Harry now has 3 health.
 //   Harry attacks Lew; Lew now has 6 health.
 //   Lew attacks Harry; Harry now has 1 health.
@@ -27,3 +27,14 @@
 // }
 
 // SOLUTION:
+
+function declareWinner(fighter1, fighter2, firstAttacker) {
+  let damage1 = Math.ceil(fighter1.health / fighter2.damagePerAttack);
+  let damage2 = Math.ceil(fighter2.health / fighter1.damagePerAttack);
+  if (damage1 > damage2) {
+    return fighter1.name;
+  } else if (damage2 > damage1) {
+    return fighter2.name;
+  }
+  return firstAttacker;
+}

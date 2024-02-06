@@ -54,3 +54,15 @@ function decode(str) {
   }
   return splitted.join('');
 }
+
+// SOLUTION PRO:
+
+let obj = { a: 1, e: 2, i: 3, o: 4, u: 5 };
+
+function encode(str) {
+  return str.replace(/[aeiou]/g, (x) => obj[x]);
+}
+
+function decode(str) {
+  return str.replace(/[1-5]/g, (x) => Object.keys(obj)[--x]);
+}

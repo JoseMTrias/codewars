@@ -16,3 +16,14 @@
 
 // SOLUTION:
 
+function vowelIndices(word) {
+  let res = [];
+  let vowels = 'aeiouyAEIOUY';
+  let splitted = word.split('');
+  splitted.forEach((letter, index) => {
+    if (vowels.includes(letter)) {
+      res.push(index + 1);
+    }
+  });
+  return res;
+}

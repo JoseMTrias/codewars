@@ -16,3 +16,12 @@
 // Triangular Numbers cannot be negative so return 0 if a negative number is given.
 
 // SOLUTION:
+
+function sumTriangularNumbers(n) {
+  if (n < 0) return 0;
+  let res = 0;
+  for (let i = 0; i <= n; i++) {
+    res += (i * (i + 1)) / 2;
+  }
+  return res;
+}

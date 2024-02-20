@@ -6,3 +6,23 @@
 // Return as a number.
 
 // SOLUTION:
+
+function divCon(x) {
+  let strings = [];
+  let stringsNumbers;
+  let numbers = 0;
+  for (let i = 0; i < x.length; i++) {
+    if (typeof x[i] === 'number') {
+      numbers += x[i];
+    } else {
+      strings.push(x[i]);
+    }
+  }
+  strings = strings.map((x) => parseInt(x));
+  if (strings.length !== 0) {
+    stringsNumbers = strings.reduce((a, b) => a + b);
+  } else {
+    stringsNumbers = [0];
+  }
+  return numbers - stringsNumbers;
+}

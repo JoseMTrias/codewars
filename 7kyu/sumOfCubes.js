@@ -11,3 +11,11 @@
 // 3 --> 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27)
 
 // SOLUTION:
+
+function sumCubes(n) {
+  let res = 0;
+  for (let i = 0; i <= n; i++) {
+    res += i * i * i;
+  }
+  return res;
+}

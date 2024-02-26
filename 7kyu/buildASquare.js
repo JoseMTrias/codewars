@@ -11,3 +11,11 @@
 // +++
 
 // SOLUTION:
+
+function generateShape(integer) {
+  let res = '+'.repeat(integer);
+  for (let i = 1; i < integer; i++) {
+    res += '\n' + '+'.repeat(integer);
+  }
+  return res;
+}

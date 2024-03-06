@@ -13,3 +13,12 @@
 // "Hi"      ---> "Hi!"
 
 // SOLUTION:
+
+function remove(str) {
+  return (
+    str
+      .split('')
+      .filter((x) => x !== '!')
+      .join('') + '!'
+  );
+}

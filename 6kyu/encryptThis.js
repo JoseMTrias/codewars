@@ -20,3 +20,15 @@
 // encryptThis("hello world") === "104olle 119drlo"
 
 // SOLUTION:
+
+var encryptThis = function (text) {
+  return text
+    .split(' ')
+    .map((e) => {
+      if (e.length === 1) return e.charCodeAt(0);
+      if (e.length === 2) return e.charCodeAt(0) + e[1];
+      if (e.length === 3) return e.charCodeAt(0) + e[2] + e[1];
+      if (e.length > 3) return e.charCodeAt(0) + e.slice(-1) + e.slice(2, -1) + e[1];
+    })
+    .join(' ');
+};

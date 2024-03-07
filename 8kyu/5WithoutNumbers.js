@@ -8,3 +8,8 @@
 // Good luck :)
 
 // SOLUTION:
+
+function unusualFive() {
+  let arr = ['hola', '!', 'me', 'llamo', 'Elliot', 'Cabessa'];
+  return arr.indexOf('Cabessa');
+}

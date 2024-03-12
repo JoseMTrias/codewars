@@ -13,3 +13,16 @@
 // Good luck!
 
 // SOLUTION:
+
+function solve(arr) {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  return (res = arr.map((word) => {
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+      if (word[i].toLowerCase() === alphabet[i]) {
+        count++;
+      }
+    }
+    return count;
+  }));
+}

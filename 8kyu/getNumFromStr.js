@@ -8,3 +8,7 @@
 // getNumberFromString(s)
 
 // SOLUTION:
+
+function getNumberFromString(s) {
+  return +s.replace(/\D/g, '');
+}

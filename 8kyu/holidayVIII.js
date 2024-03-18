@@ -12,3 +12,9 @@
 // All inputs will be integers. Please return an integer. Round down.
 
 // SOLUTION:
+
+function dutyFree(normPrice, discount, hol) {
+  discount = discount / 100;
+  let savings = normPrice * discount;
+  return Math.floor(hol / savings);
+}

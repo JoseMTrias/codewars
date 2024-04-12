@@ -22,4 +22,4 @@
 // Example of a string rotated to the left by one position:
 // s = "123456" gives "234561".
 
-// SOLUTION:
+// SOLUTION :

@@ -8,3 +8,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
 // SOLUTION:
+
+function take(arr, n) {
+  return arr.slice(0, n);
+}

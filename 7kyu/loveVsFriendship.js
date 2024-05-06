@@ -50,3 +50,9 @@ function wordsToMarks(str) {
   }
   return res;
 }
+
+// SOLUTION PRO:
+
+function wordsToMarks(str) {
+  return str.split('').reduce((prev, curr) => prev + curr.charCodeAt() - 96, 0);
+}

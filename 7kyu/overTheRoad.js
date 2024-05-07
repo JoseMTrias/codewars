@@ -12,3 +12,7 @@
 // Evens increase on the right; odds decrease on the left. House numbers start at 1 and increase without gaps. When n = 3, 1 is opposite 6, 3 opposite 4, and 5 opposite 2.
 
 // SOLUTION:
+
+function overTheRoad(address, n) {
+  return n * 2 - address + 1;
+}

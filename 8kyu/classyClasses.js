@@ -10,3 +10,9 @@
 // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 
 // SOLUTION:
+
+class Person {
+  constructor(name, age) {
+    this.info = `${name}s age is ${age}`;
+  }
+}

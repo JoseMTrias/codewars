@@ -15,3 +15,16 @@
 // Tested strings are at least 8 characters long.
 
 // SOLUTION:
+
+function sortMyString(str) {
+  let odd = '';
+  let even = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      odd += str[i];
+    } else {
+      even += str[i];
+    }
+  }
+  return `${odd} ${even}`;
+}

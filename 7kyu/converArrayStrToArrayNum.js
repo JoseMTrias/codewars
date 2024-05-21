@@ -13,3 +13,7 @@
 // Note that you can receive floats as well.
 
 // SOLUTION:
+
+function toNumberArray(stringarray) {
+  return stringarray.map((x) => Number(x));
+}

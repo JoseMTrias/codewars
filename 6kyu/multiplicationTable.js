@@ -13,3 +13,14 @@
 // [[1,2,3],[2,4,6],[3,6,9]]
 
 // SOLUTION:
+
+function multiplicationTable(size) {
+  let result = [];
+  for (let i = 0; i < size; i++) {
+    result[i] = [];
+    for (let j = 0; j < size; j++) {
+      result[i][j] = (i + 1) * (j + 1);
+    }
+  }
+  return result;
+}

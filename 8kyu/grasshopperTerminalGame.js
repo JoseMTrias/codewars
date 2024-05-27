@@ -10,3 +10,7 @@
 // move(3, 6) should equal 15
 
 // SOLUTION:
+
+function move(position, roll) {
+  return roll * 2 + position;
+}

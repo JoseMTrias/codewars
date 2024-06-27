@@ -15,6 +15,15 @@
 
 // Make sure you cover the cases where certain words do not show up with correct capitalization. For example, the input "pOLitiCIaN" should still return "Your tax dollars".
 
-
-
 // SOLUTION:
+
+function getDrinkByProfession(param) {
+  param = param.toLowerCase();
+  if (param === 'jabroni') return 'Patron Tequila';
+  if (param === 'school counselor') return 'Anything with Alcohol';
+  if (param === 'programmer') return 'Hipster Craft Beer';
+  if (param === 'bike gang member') return 'Moonshine';
+  if (param === 'politician') return 'Your tax dollars';
+  if (param === 'rapper') return 'Cristal';
+  return 'Beer';
+}

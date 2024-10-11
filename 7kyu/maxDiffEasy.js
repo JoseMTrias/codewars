@@ -11,3 +11,9 @@
 // Have fun!
 
 // SOLUTION:
+
+function maxDiff(list) {
+  if (list.length <= 1) return 0;
+  let sorted = list.sort((a, b) => a - b);
+  return sorted[sorted.length - 1] - sorted[0];
+}

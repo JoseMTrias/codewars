@@ -6,3 +6,7 @@
 // Return true if yes, false otherwise :)
 
 // SOLUTION:
+
+function hero(bullets, dragons) {
+  return bullets >= dragons * 2;
+}

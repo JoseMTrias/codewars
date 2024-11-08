@@ -15,3 +15,9 @@
 // sleigh.authenticate("jhoffner", "CodeWars"); // Nope, even Jake is not allowed to use the sleigh ;)
 
 // SOLUTION:
+
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function (name, password) {
+  return name === 'Santa Claus' && password === 'Ho Ho Ho!';
+};

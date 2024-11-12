@@ -15,3 +15,7 @@
 // "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
 
 // SOLUTION:
+
+function sortGiftCode(code) {
+  return code.split('').sort().join('');
+}

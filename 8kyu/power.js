@@ -11,3 +11,11 @@
 // Note: Math.pow and some other Math functions like eval() and ** are disabled.
 
 // SOLUTION:
+
+function numberToPower(number, power) {
+  let res = 1;
+  for (let i = 0; i < power; i++) {
+    res *= number;
+  }
+  return res;
+}

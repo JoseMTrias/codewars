@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/58bf9bd943fadb2a980000a7/train/javascript
+//www.codewars.com/kata/58bf9bd943fadb2a980000a7/train/javascript
 
 // DESCRIPTION:
 
@@ -8,3 +8,7 @@ https://www.codewars.com/kata/58bf9bd943fadb2a980000a7/train/javascript
 
 // SOLUTION:
 
+https: function whoIsPaying(name) {
+  if (name.length > 2) return [name, name[0] + name[1]];
+  return [name];
+}

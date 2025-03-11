@@ -8,3 +8,10 @@
 //   0 -->     0  (  0 * 5¹)
 //  -3 -->   -15  ( -3 * 5¹)
 
+// SOLUTION:
+
+function multiply(number) {
+  digits = number.toString().length;
+  if (number < 0) digits = number.toString().length - 1;
+  return number * Math.pow(5, digits);
+}

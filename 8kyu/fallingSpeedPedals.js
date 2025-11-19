@@ -16,7 +16,7 @@
 // SOLUTION
 
 function sakuraFall(v) {
-  let height = 80*5
-  if(v <= 0) return 0
-  return (height)/v; 
+  let height = 80 * 5;
+  if (v <= 0) return 0;
+  return height / v;
 }

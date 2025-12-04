@@ -7,3 +7,8 @@
 // Can you help me fix the function?
 
 // SOLUTION:
+
+function addFive(num) {
+  var total = num + 5;
+  return total;
+}

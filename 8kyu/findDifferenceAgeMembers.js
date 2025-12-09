@@ -7,3 +7,10 @@
 // You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0. Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
 
 // SOLUTION:
+
+function differenceInAges(ages) {
+  let youngest = ages.sort((a, b) => a - b)[0];
+  let oldest = ages.sort((a, b) => a - b)[ages.length - 1];
+  let difference = oldest - youngest;
+  return [youngest, oldest, difference];
+}
